@@ -35,16 +35,17 @@ body {
 	margin: 0;
 	padding: 0;
 	text-align: left;
-	background: linear-gradient(var(--gray-gradient)) no-repeat;
+	background: #e3e3ff;
 	background-size: 100% 600px;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	color: rgb(var(--gray-dark));
 	font-size: 20px;
 	line-height: 1.7;
+	background-color: linear-gradient(to bottom, #979797, #000000);
 }
 main {
-	width: 720px;
+	width: 50%;
 	max-width: calc(100% - 2em);
 	margin: auto;
 	padding: 3em 1em;
