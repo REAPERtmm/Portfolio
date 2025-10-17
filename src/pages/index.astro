@@ -35,13 +35,13 @@ const last_post = (await getCollection('blog')).sort(
 			<p>
 				You will find here :
 				<ul>
-					<li>Information about me in the <HeaderLink href="about/">About</HeaderLink> Section</li> 
-					<li>My different projects in the <HeaderLink href="projects/">Projects</HeaderLink> Section</li>
-					<li>My different posts in the <HeaderLink href="blog/">Blog</HeaderLink> Section</li>
+					<li>Information about me in the <HeaderLink href="about/index.html">About</HeaderLink> Section</li> 
+					<li>My different projects in the <HeaderLink href="projects/index.html">Projects</HeaderLink> Section</li>
+					<li>My different posts in the <HeaderLink href="blog/index.html">Blog</HeaderLink> Section</li>
 				</ul>
 			</p>
 			{
-				<a href={`projects/${last_project.id}/`}>
+				<HeaderLink href={`projects/${last_project.id}/index.html`}>
 					{last_project.data.heroImage && (
 						<Image width={720} height={360} src={last_project.data.heroImage} alt="" />
 					)}
@@ -49,8 +49,8 @@ const last_post = (await getCollection('blog')).sort(
 					<p class="date">
 						<FormattedDate date={last_project.data.pubDate} />
 					</p>
-				</a>
-				<a href={`blog/${last_post.id}/`}>
+				</HeaderLink>
+				<HeaderLink href={`blog/${last_post.id}/index.html`}>
 					{last_post.data.heroImage && (
 						<Image width={720} height={360} src={last_post.data.heroImage} alt="" />
 					)}
@@ -58,7 +58,7 @@ const last_post = (await getCollection('blog')).sort(
 					<p class="date">
 						<FormattedDate date={last_post.data.pubDate} />
 					</p>
-				</a>
+				</HeaderLink>
 			}
 			<!-- 
 			Add Carousel for showing lastest projects
