@@ -8,3 +8,4 @@ heroImage: '../../assets/blog-placeholder-3.jpg'
 ![](../../assets/blog-placeholder-1.jpg)
 
 Test de blog !
+
