@@ -1,6 +1,6 @@
 ---
-title: 'First post'
-description: 'Lorem ipsum dolor sit amet'
+title: 'Test Post'
+description: 'this is a test post to check if images works'
 pubDate: 'Oct 20 2025'
 heroImage: '../../assets/blog-placeholder-3.jpg'
 ---
