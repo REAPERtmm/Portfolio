@@ -93,6 +93,7 @@ const posts = (await getCollection('blog')).sort(
 			<section>
 				<ul>
 					{
+						
 						posts.map((post) => (
 							<li>
 								<HeaderLink href={`/blog/${post.id}/index.html`}>
