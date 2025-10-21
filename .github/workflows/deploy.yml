@@ -2,8 +2,8 @@ name: Deploy Astro to GitHub Pages
 
 on:
   push:
-    branches: [ master ]  # 🔹 à changer si ta branche principale s’appelle différemment
-  workflow_dispatch:     # 🔹 te permet aussi de relancer manuellement depuis l’interface GitHub
+    branches: [ master ] 
+  workflow_dispatch: 
 
 permissions:
   contents: read
@@ -35,9 +35,12 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist  # 🟩 dossier généré par Astro
+          path: ./dist 
 
   deploy:
+    environment:
+      name: github-pages  
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
     steps:
