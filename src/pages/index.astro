@@ -40,28 +40,26 @@ const last_post = (await getCollection('blog')).sort(
 					<li>My different posts in the <HeaderLink href="blog/index.html">Blog</HeaderLink> Section</li>
 				</ul>
 			</p>
-			<div style="shadow-box: 0 2px 8px rgba(0, 0, 0, 20%)">
-				{
-					<HeaderLink href={`/projects/${last_project.id}/index.html`}>
-						{last_project.data.heroImage && (
-							<Image width={720} height={360} src={last_project.data.heroImage} alt="" />
-						)}
-						<h4 class="title">{"Last Project"}</h4>
-						<p class="date">
-							<FormattedDate date={last_project.data.pubDate} />
-						</p>
-					</HeaderLink>
-					<HeaderLink href={`/blog/${last_post.id}/index.html`}>
-						{last_post.data.heroImage && (
-							<Image width={720} height={360} src={last_post.data.heroImage} alt="" />
-						)}
-						<h4 class="title">{"Last Post"}</h4>
-						<p class="date">
-							<FormattedDate date={last_post.data.pubDate} />
-						</p>
-					</HeaderLink>
-				}
-			</div>
+			{
+				<HeaderLink href={`/projects/${last_project.id}/index.html`}>
+					{last_project.data.heroImage && (
+						<Image class="classImage" width={720} height={360} src={last_project.data.heroImage} alt="" />
+					)}
+					<h4 class="title">{"Last Project"}</h4>
+					<p class="date">
+						<FormattedDate date={last_project.data.pubDate} />
+					</p>
+				</HeaderLink>
+				<HeaderLink href={`/blog/${last_post.id}/index.html`}>
+					{last_post.data.heroImage && (
+						<Image class="classImage" width={720} height={360} src={last_post.data.heroImage} alt="" />
+					)}
+					<h4 class="title">{"Last Post"}</h4>
+					<p class="date">
+						<FormattedDate date={last_post.data.pubDate} />
+					</p>
+				</HeaderLink>
+			}
 			<!-- 
 			Add Carousel for showing lastest projects
 			-->
