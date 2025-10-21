@@ -16,9 +16,9 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 		<BaseHead title={title} description={description} />
 		<style>
 			main {
-				width: 50%;
-				max-width: 50%;
-				margin: auto;
+				width: calc(100% - 2em);
+				max-width: 100%;
+				margin: 0;
 			}
 			.hero-image {
 				width: 100%;
@@ -51,15 +51,6 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			}
 			.last-updated-on {
 				font-style: italic;
-			}
-			
-			p{
-				align-content: center;
-				align-items: center;
-			}
-
-			blockquote{
-				background-color: rgb(191, 186, 255);
 			}
 		</style>
 	</head>
