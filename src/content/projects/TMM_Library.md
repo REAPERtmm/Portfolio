@@ -1,7 +1,7 @@
 ---
 title: 'TMM_Library'
 description: 'My own C++ library that i can use on other projects (windows-only)'
-pubDate: '01/11/2025'
+pubDate: 'Nov 01 2025'
 heroImage: '../../assets/TMM_Library/logo.png'
 ---
 
@@ -33,5 +33,8 @@ This third one is inspired from the Standard Library and is a duo of class that 
 ### TMM_Threading 
 
 This collection is following a lecture on **multithreading** and is a wrapper to the **thread** function of the WINAPI, with some more class to use **parallelism** on any resource.
+
+### TMM_Maths
+This collection contain the building blocks for maths algebra such as Vector 2, 3 and 4 dimentional. I intend to add the Matrix. Also, I implemented a simple architecture to use the SIMD with the vector which greatly improve performence while in release. Notably on Matrices multiplication.
 
 [^1]: For every C++ project i used CMake and Visual Studio

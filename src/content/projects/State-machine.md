@@ -1,7 +1,7 @@
 ---
 title: 'State Machine'
 description: 'First application of a state machine'
-pubDate: '22/03/2025'
+pubDate: 'Mar 22 2025'
 heroImage: '../../assets/State-Machine/logo.png'
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: 'Multiplayer'
 description: 'My first steps into multiplayer in pure C++'
-pubDate: '30/01/2025'
+pubDate: 'Jan 30 2025'
 heroImage: '../../assets/First-Step-Multiplayer/logo.png'
 ---
 
