@@ -1,7 +1,7 @@
 ---
 title: 'First Steps with DirectX'
 description: 'A basic DirectX game engine built from scratch in one month as a team project'
-pubDate: 'Mar 15 2024'
+pubDate: 'Feb 15 2025'
 heroImage: '../../assets/First-Steps-with-DirectX/DirectX.jpg'
 ---
 
