@@ -2,7 +2,7 @@
 title: 'First Steps with DirectX'
 description: 'A basic DirectX game engine built from scratch in one month as a team project'
 pubDate: 'Mar 15 2024'
-heroImage: '../../assets/PIT_Engine/DirecX.jpg'
+heroImage: '../../assets/First-Steps-with-DirectX/DirectX.jpg'
 ---
 
 # PIT_Engine
