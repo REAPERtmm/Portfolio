@@ -1,7 +1,8 @@
 ---
 title: 'Dev Log – UI Module & SmartPtr'
 description: 'Recent additions: a modular UI system with an SFML backend and custom smart pointers'
-pubDate: 'Jan 2026'
+pubDate: '06 Feb 2026'
+heroImage: '../../assets/TMM_Library_New_Features/UI.jpg'
 ---
 
 # Dev Log – UI Module & SmartPtr
