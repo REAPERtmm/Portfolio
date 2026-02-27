@@ -20,7 +20,7 @@ const posts = (await getCollection('projects')).sort(
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<style>
 			main {
-				max-width: 960px;
+				max-width: 1300px;
 				margin: 0 auto;   
 			}
 			ul {
@@ -33,7 +33,6 @@ const posts = (await getCollection('projects')).sort(
 			}
 			ul li {
 				width: calc(100% - 1rem);
-				aspect-ratio: 1.0;
 			}
 			ul li * {
 				text-decoration: none;
