@@ -88,7 +88,7 @@ const posts = (await getCollection('projects')).sort(
 							<li>
 								<HeaderLink href={`/projects/${post.id}/index.html`}>
 									{post.data.heroImage && (
-										<Image class="classImage" width={320} height={160} src={post.data.heroImage} alt="" />
+										<Image class="classImage" width={300} height={300} src={post.data.heroImage} alt="" />
 									)}
 									<h4 class="title">{post.data.title}</h4>
 									<p class="date">

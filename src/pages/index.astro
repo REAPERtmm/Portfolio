@@ -44,7 +44,7 @@ const last_post = (await getCollection('blog')).sort(
 			{
 				<HeaderLink href={`/projects/${last_project.id}/index.html`}>
 					{last_project.data.heroImage && (
-						<Image class="classImage" width={320} height={160} src={last_project.data.heroImage} alt="" />
+						<Image class="classImage" width={300} height={300} src={last_project.data.heroImage} alt="" />
 					)}
 					<h4 class="title">{"Last Project"}</h4>
 					<p class="date">
@@ -53,7 +53,7 @@ const last_post = (await getCollection('blog')).sort(
 				</HeaderLink>
 				<HeaderLink href={`/blog/${last_post.id}/index.html`}>
 					{last_post.data.heroImage && (
-						<Image class="classImage" width={320} height={160} src={last_post.data.heroImage} alt="" />
+						<Image class="classImage" width={300} height={300} src={last_post.data.heroImage} alt="" />
 					)}
 					<h4 class="title">{"Last Post"}</h4>
 					<p class="date">
