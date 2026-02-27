@@ -39,9 +39,14 @@ const posts = (await getCollection('projects')).sort(
 				transition: 0.2s ease;
 			}
 			ul li img {
+				width: 100%;
+				aspect-ratio: 1 / 1;   
+				object-fit: cover;    
+				border-radius: 12px;
 				margin-bottom: 0.5rem;
 				border-radius: 12px;
 			}
+			
 			ul li a {
 				display: block;
 			}
