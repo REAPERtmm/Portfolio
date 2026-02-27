@@ -8,6 +8,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 import { Image } from 'astro:assets';
 import FormattedDate from '../components/FormattedDate.astro';
 import { getCollection } from 'astro:content';
+
 const last_project = (await getCollection('projects')).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 )[0];
@@ -43,7 +44,7 @@ const last_post = (await getCollection('blog')).sort(
 			{
 				<HeaderLink href={`/projects/${last_project.id}/index.html`}>
 					{last_project.data.heroImage && (
-						<Image class="classImage" width={360} height={180} src={last_project.data.heroImage} alt="" />
+						<Image class="classImage" width={320} height={160} src={last_project.data.heroImage} alt="" />
 					)}
 					<h4 class="title">{"Last Project"}</h4>
 					<p class="date">
@@ -52,7 +53,7 @@ const last_post = (await getCollection('blog')).sort(
 				</HeaderLink>
 				<HeaderLink href={`/blog/${last_post.id}/index.html`}>
 					{last_post.data.heroImage && (
-						<Image class="classImage" width={360} height={180} src={last_post.data.heroImage} alt="" />
+						<Image class="classImage" width={320} height={160} src={last_post.data.heroImage} alt="" />
 					)}
 					<h4 class="title">{"Last Post"}</h4>
 					<p class="date">
