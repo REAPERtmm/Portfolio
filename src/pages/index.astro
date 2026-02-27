@@ -22,6 +22,16 @@ const last_post = (await getCollection('blog')).sort(
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			img {
+				width: 100%;
+				aspect-ratio: 1 / 1;   
+				object-fit: cover;    
+				border-radius: 12px;
+				margin-bottom: 0.5rem;
+				border-radius: 12px;
+			}
+		</style>
 	</head>
 	<body>
 		<Header />
