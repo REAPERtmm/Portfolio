@@ -9,7 +9,7 @@ heroImage: '../../assets/TMM_Library/logo.png'
 
 ## Introduction
 
-In this project that i will **continue to update**, the objective was to create a **Library** that i can use as a base to **refer** to when i need something on a new **C++ project** [^1]. Like a central point, it will help me gain time while allow me to discover ways of doing various things.
+In this project, the objective was to create a **Library** that i can use as a base to **refer** to when i need something on a new **C++ project** [^1]. Like a central point, it will help me gain time while allow me to discover ways of doing various things.
 
 ## Sommaire
 
